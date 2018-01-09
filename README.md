@@ -2,7 +2,7 @@
 
 A shared style guide for UI design in the IPFS universe.
 
-Reuse these [colors](#colors), [typography](#typography), and [spacing](#spacing) values to create a coherent feel across all ipfs applications.
+Reuse these [colors](#colors), [typography](#typography), and [spacing](#spacing) values to create a coherent feel across all IPFS applications.
 
 ## Colors
 
@@ -92,7 +92,7 @@ Use a spacing scale to define a finite set of margin and padding sizes.
 
 Using a scale gives a layout coherence and pinning the possible values to a fixed set avoids littering the stylesheet with magic numbers. Reusing the same spacing values creates vertical rhythm.
 
-Capturing your spacing values as single purpose css classes allows you to quickly adjust layouts without side effects. You can modify the use site in the DOM without the risk of breaking another part of the UI. 
+Capturing your spacing values as single purpose css classes allows you to quickly adjust layouts without side effects. You can modify the use site in the DOM without the risk of breaking another part of the UI.
 
 The tachyons spacing scale is:
 
