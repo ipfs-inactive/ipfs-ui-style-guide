@@ -10,12 +10,12 @@ _Extracted from [ipfs.io] and **TBC**_
 
 | teal       | turquoise | blue      |
 |------------|-----------|-----------|
-| `#3469ea2` | `#6acad1` | `#00b0e9` |
+| `#469ea2` | `#6acad1` | `#00b0e9` |
 | <img title='teal' src='http://swatches.now.sh/?color=%23469ea2'/> | <img title='turquoise' src='http://swatches.now.sh/?color=%236acad1'/> | <img title='blue' src='http://swatches.now.sh/?color=%2300b0e9'/>
 
 | red        | orange    | beige     |
 |------------|-----------|-----------|
-| `#f05234`  | `#6acad1` | `#00b0e9` |
+| `#f05234`  | `#f59223` | `#ffe5ca` |
 | <img title='red' src='http://swatches.now.sh/?color=%23f05234'/> | <img title='orange' src='http://swatches.now.sh/?color=%23f59223'/> | <img title='beige' src='http://swatches.now.sh/?color=%23ffe5ca'/>
 
 
