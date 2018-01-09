@@ -6,12 +6,43 @@ Reuse these [colors](#colors), [typography](#typography), and spacing values (TB
 
 ## Colors
 
-| teal       | turquoise | blue      | grey
-|------------|-----------|-----------|---------------  
-| `#3469ea2` | `#6acad1` | `#00b0e9` | `#666666`
-| <img title='teal' src='http://swatches.now.sh/?color=%23469ea2'/> | <img title='turquoise' src='http://swatches.now.sh/?color=%236acad1'/> | <img title='blue' src='http://swatches.now.sh/?color=%2300b0e9'/> | <img title='blue' src='http://swatches.now.sh/?color=%23666666'/>
+_Extracted from [ipfs.io] and **TBC**_
+
+| teal       | turquoise | blue      |
+|------------|-----------|-----------|
+| `#3469ea2` | `#6acad1` | `#00b0e9` |
+| <img title='teal' src='http://swatches.now.sh/?color=%23469ea2'/> | <img title='turquoise' src='http://swatches.now.sh/?color=%236acad1'/> | <img title='blue' src='http://swatches.now.sh/?color=%2300b0e9'/>
+
+| red        | orange    | beige     |
+|------------|-----------|-----------|
+| `#f05234`  | `#6acad1` | `#00b0e9` |
+| <img title='red' src='http://swatches.now.sh/?color=%23f05234'/> | <img title='orange' src='http://swatches.now.sh/?color=%23f59223'/> | <img title='beige' src='http://swatches.now.sh/?color=%23ffe5ca'/>
+
+
+| blue black | text gray  | light gray |
+|------------|------------|------------|
+| `#041727`  | `#4d5659`  | `#b7c0c3`  |
+| <img title='blue black' src='http://swatches.now.sh/?color=%23041727'/> | <img title='text gray' src='http://swatches.now.sh/?color=%234d5659'/> | <img title='light gray' src='http://swatches.now.sh/?color=%23b7c0c3'/>
+
+### Fancy hero header gradient
+
+<img width="862" alt="screenshot 2018-01-09 10 57 23" src="https://user-images.githubusercontent.com/58871/34717721-e58d733c-f52b-11e7-8996-b3256ff47b74.png">
+
+```css
+.ipfs-gradient-1 {
+  background:linear-gradient(to top, #041727 0%,#043b55 100%);
+}
+```
+
+
+| from `#043b55`| to `#041727` |
+|------|----|
+| ![#043b55](http://swatches.now.sh?color=%23043b55) | ![#041727](http://swatches.now.sh?color=%23041727)
+
 
 ## Typography
+
+_Extracted from [tachyons] and **TBC**_
 
 ### Font family
 
@@ -63,5 +94,6 @@ This style guide uses ideas from http://tachyons.io/docs/ and http://basscss.com
 
 This repository is mainly for documents. All of these are licensed under the [CC-BY-SA 3.0](https://ipfs.io/ipfs/QmVreNvKsQmQZ83T86cWSjPu2vR3yZHGPm5jnxFuunEB9u) license © 2016 Protocol Labs Inc. Any code is under an [MIT license](LICENSE) © 2016 Protocol Labs Inc.
 
+[ipfs.io]: https://ipfs.io
 [tachyons]: http://tachyons.io
 [tachyons type scale]: http://tachyons.io/docs/typography/scale/
