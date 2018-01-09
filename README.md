@@ -90,9 +90,9 @@ These are just there to help get things done quickly. Use whatever font-size the
 
 Use a spacing scale to define a finite set of margin and padding sizes.
 
-Using a scale provides a visually pleasing coherence to the layout, and pinning the possible values to a fixed set avoids littering the stylesheet with magic numbers.
+Using a scale gives a layout coherence and pinning the possible values to a fixed set avoids littering the stylesheet with magic numbers. Reusing the same spacing values creates vertical rhythm.
 
-Capturing your spacing values as single purpose css classes allows you to quickly adjust layouts without side effects. You can modify the use site in the DOM without the risk of breaking another part of the UI.
+Capturing your spacing values as single purpose css classes allows you to quickly adjust layouts without side effects. You can modify the use site in the DOM without the risk of breaking another part of the UI. 
 
 The tachyons spacing scale is:
 
