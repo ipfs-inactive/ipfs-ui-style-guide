@@ -42,8 +42,6 @@ Rendered example
 
 <img width="862" alt="screenshot 2018-01-09 10 57 23" src="https://user-images.githubusercontent.com/58871/34717721-e58d733c-f52b-11e7-8996-b3256ff47b74.png">
 
----
-
 ## Typography
 
 _Extracted from [tachyons] and **TBC**_
@@ -90,8 +88,6 @@ Sometimes you need really big text, for fancy splash pages and hero sections.
 
 These are just there to help get things done quickly. Use whatever font-size the design calls for. If the it's a one time use for a big impact intro, then just use an inline style.
 
----
-
 ## Spacing
 
 Use a spacing scale to define a finite set of margin and padding sizes.
@@ -136,8 +132,6 @@ followed by a _size_ from the scale, so:
 
 - `mb3`: margin bottom 3 = `margin-bottom: 1rem`
 - `pa2`: margin all 2 = `padding: 0.5rem`
-
----
 
 ## Credits
 
