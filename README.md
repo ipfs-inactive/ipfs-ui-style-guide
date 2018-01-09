@@ -1,8 +1,8 @@
-# IPFS Design Style Guide
+# IPFS UI Style Guide
 
 A shared style guide for UI design in the IPFS universe.
 
-Reuse these [colors](#colors), [typography](#typography), and spacing values (TBD) to create a coherent feel across all ipfs applications.
+Reuse these [colors](#colors), [typography](#typography), and [spacing](#spacing) values to create a coherent feel across all ipfs applications.
 
 ## Colors
 
@@ -62,7 +62,7 @@ Provide the main content in a font that blends in with the users system, and is 
 Use a type scale to pick a small set of font sizes that work together. The [tachyons type scale] is good.
 
 | class name | px   | rem    | Example
-| ----------:|:-----|:-------|----------
+| ----------:|-----:|:-------|----------
 |      `.f1` | 48px | 3      | Main header `<h1 class="f1">`
 |      `.f2` | 36px | 2.25   | Sub head `<h2 class="f2">`
 |      `.f3` | 24px | 1.5    | `<h3 class="f3">`
@@ -80,11 +80,56 @@ Agreeing to a finite set of font sizes prevents the font-size sprawl that often 
 Sometimes you need really big text, for fancy splash pages and hero sections.
 
 | class name       | px   | rem  | Example
-| ----------------:|:-----|:-----|----------
+| ----------------:|-----:|:-----|----------
 | `.f-headline`    | 48px | 6    | Hero headline `<h1 class="f-headline">`
 | `.f-subheadline` | 36px | 5    | `<h2 class="f-subheadline">`
 
 These are just there to help get things done quickly. Use whatever font-size the design calls for. If the it's a one time use for a big impact intro, then just use an inline style.
+
+## Spacing
+
+Use a spacing scale to define a finite set of margin and padding sizes.
+
+Using a scale provides a visually pleasing coherence to the layout, and pinning the possible values to a fixed set avoids littering the stylesheet with magic numbers.
+
+Capturing your spacing values as single purpose css classes allows you to quickly adjust layouts without side effects. You can modify the use site in the DOM without the risk of breaking another part of the UI.
+
+The tachyons spacing scale is:
+
+| class name  | px   | rem   | CSS declaration
+| -----------:|-----:|:------|--------------------
+|      `.pa0` |   0px | 0    | `padding: 0`
+|      `.pa1` |   4px | 0.25 | `padding: 0.25rem`
+|      `.pa2` |   8px | 0.5  | `padding: 0.5rem`
+|      `.pa3` |  16px | 1    | `padding: 1rem`
+|      `.pa4` |  32px | 2    | `padding: 2rem`
+|      `.pa5` |  64px | 4    | `padding: 4rem`
+|      `.pa6` | 128px | 8    | `padding: 8rem`
+|      `.pa7` | 256px | 16   | `padding: 16rem`
+
+See: http://tachyons.io/docs/layout/spacing/
+
+The class names follow a simple structure. They start with either:
+
+- `m` for **margin**. `ma0` is `margin: 0`
+- `p` for **padding**. `pa3` is `padding: 1rem`
+
+followed by a _direction_
+
+- `a` for **all**. `pa3` is `padding: 3rem`
+- `h` for **horizontal**, so left and right. `mh3` is `margin-left: 1rem; margin-right: 1rem;`
+- `v` for **vertical**. `pv3` is `padding-top: 1rem padding-bottom: 1rem;`
+- `l` is **left**, `r` is **right**. `pl3` is `padding-left: 1rem;`
+- `t` is **top**, `b` is **bottom**. `mt3` is `margin-top: 1rem;`
+
+followed by a _size_ from the scale, so:
+
+```html
+<div class='mb3 pa2'>Woo woo</div>
+```
+
+- `mb3`: margin bottom 3 = `margin-bottom: 1rem`
+- `pa2`: margin all 2 = `padding: 0.5rem`
 
 ## Credits
 
