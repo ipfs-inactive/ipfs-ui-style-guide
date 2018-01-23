@@ -1,0 +1,42 @@
+{
+  "name": "ipfs-ui-style-guide",
+  "version": "1.0.0",
+  "description": "A shared style guide for UI design in the IPFS universe.",
+  "scripts": {
+    "test": "say sorry && exit 1",
+    "clean": "rm -rf ./docs/*",
+    "build": "npm-run-all --serial clean --parallel build:*",
+    "build:html": "node build/html.js",
+    "watch": "run-p watch:*",
+    "watch:html": "nodemon -w components -w pages -e js,json,jsx -x npm run build:html",
+    "watch:serve": "browser-sync start --files 'docs/bundle.*' --files 'docs/*.html' --server docs --port 4000 --reload-delay 600",
+    "deploy": "run-s build deploy:*",
+    "deploy:ipfs": "ipfs add -r -q docs | tail -n1 >versions/current; cat versions/current >> versions/history; cat versions/current"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs-shipyard/ipfs-ui-style-guide.git"
+  },
+  "author": "olizilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipfs-shipyard/ipfs-ui-style-guide/issues"
+  },
+  "homepage": "https://github.com/ipfs-shipyard/ipfs-ui-style-guide#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "require-directory": "^2.1.1",
+    "styled-components": "^3.0.1",
+    "styled-system": "^1.1.1",
+    "browser-sync": "^2.23.5",
+    "nodemon": "^1.14.11",
+    "npm-run-all": "^4.1.2",
+    "standard": "^10.0.3"
+  }
+}
