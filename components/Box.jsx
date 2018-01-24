@@ -49,7 +49,11 @@ export const Half = Box.extend``
 Half.defaultProps = {
   display: 'inline-block',
   verticalAlign: 'top',
-  width: 0.5
+  width: '50%'
 }
 
 export const Section = Box.withComponent('section')
+
+export const Header = Box.withComponent('header')
+
+export const Footer = Box.withComponent('footer')

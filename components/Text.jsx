@@ -10,6 +10,12 @@ import {
   style
 } from 'styled-system'
 
+const fontFamily = responsiveStyle({
+  prop: 'fontFamily',
+  cssProperty: 'fontFamily',
+  key: 'fonts'
+})
+
 const display = responsiveStyle({
   prop: 'display',
   cssProperty: 'display'
@@ -24,13 +30,15 @@ export const Text = styled.span`
   ${color}
   ${space}
   ${width}
-  ${fontSize}
-  ${fontWeight}
   ${textAlign}
   ${display}
   ${textTransform}
+  ${fontSize}
+  ${fontWeight}
+  ${fontFamily}
 `
 Text.defaultProps = {
   fontSize: 2,
-  fontWeight: 400
+  fontWeight: 400,
+  fontFamily: 0
 }
