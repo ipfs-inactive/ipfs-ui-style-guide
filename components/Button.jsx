@@ -30,9 +30,9 @@ export const Button = styled.button`
   white-space: nowrap;
   line-height: 1;
   cursor: ${props => !props.disabled ? 'pointer' : 'initial'};
-  transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out, box-shadow .15s ease-in-out;
   &:hover {
-    opacity: 0.9;
+    opacity: ${props => props.disabled ? 1 : 0.9};
   }
   &:focus {
     outline: 0;
@@ -42,7 +42,8 @@ export const Button = styled.button`
     background-color: ${props => props.theme.colors['gray-muted']};
   }
   &:active {
-    box-shadow: ${props => props.disabled ? 'initial' : 'inset 0 0 8px rgba(0,0,0,0.2)'};
+    opacity: 0.95;
+    box-shadow: ${props => props.disabled ? 'initial' : 'inset 0 0 8px rgba(0,0,0,0.3)'};
   }
 `
 
@@ -64,5 +65,6 @@ ResponsiveButton.defaultProps = {
   ...Button.defaultProps,
   display: ['block', 'inline-block'],
   width: ['100%', 'initial'],
-  my: 3
+  my: [3, 2],
+  mx: [0, 2]
 }
