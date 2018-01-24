@@ -12,8 +12,8 @@ const Index = ({theme}) => {
   return (
     <div>
       <Header px={2} py={4} bg='navy'>
-        <Box align='right'>
-          <PosterH2 mx={3} display='inline'>
+        <Box align={['center', 'right']}>
+          <PosterH2 mx={3} display={['none', 'inline']}>
             The Interplanetary File System
           </PosterH2>
           <PosterH1 mx={3} display='inline'>
