@@ -8,7 +8,7 @@
     "build": "npm-run-all --serial clean --parallel build:*",
     "build:html": "node build/html.js",
     "watch": "run-p watch:*",
-    "watch:html": "nodemon -w components -w pages -e js,json,jsx -x npm run build:html",
+    "watch:html": "nodemon -w theme.json -w components -w pages -e js,json,jsx -x npm run build:html",
     "watch:serve": "browser-sync start --files 'docs/bundle.*' --files 'docs/*.html' --server docs --port 4000 --reload-delay 600",
     "deploy": "run-s build deploy:*",
     "deploy:ipfs": "ipfs add -r -q docs | tail -n1 >versions/current; cat versions/current >> versions/history; cat versions/current"

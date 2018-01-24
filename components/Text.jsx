@@ -6,6 +6,8 @@ import {
   fontSize,
   fontWeight,
   textAlign,
+  lineHeight,
+  letterSpacing,
   responsiveStyle,
   style
 } from 'styled-system'
@@ -33,6 +35,8 @@ export const Text = styled.span`
   ${textAlign}
   ${display}
   ${textTransform}
+  ${lineHeight}
+  ${letterSpacing}
   ${fontSize}
   ${fontWeight}
   ${fontFamily}

@@ -1,7 +1,7 @@
 {
   "fonts": [
     "'Inter UI', system-ui, sans-serif",
-    "'Montserrat', 'avenir next', 'Verdana', system-ui, sans-serif"
+    "'Montserrat', 'Verdana', system-ui, sans-serif"
   ],
   "space": [
     0,
@@ -46,7 +46,7 @@
     "snow-muted": "#f7f8fa"
   },
   "shadows": [
-    "0px 3px 6px 0 rgba(205, 207, 214, 0.35)"
+    "0px 3px 6px 0 rgba(205,207,214,0.35)"
   ],
   "lineHeight": "1.5",
   "textColor": "charcoal"

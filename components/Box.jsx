@@ -7,8 +7,11 @@ import {
   fontWeight,
   textAlign,
   boxShadow,
+  borderColor,
+  borderWidth,
   borderRadius,
-  responsiveStyle
+  responsiveStyle,
+  cleanElement
 } from 'styled-system'
 
 const display = responsiveStyle({
@@ -21,7 +24,7 @@ const verticalAlign = responsiveStyle({
   cssProperty: 'verticalAlign'
 })
 
-export const Box = styled.div`
+export const Box = styled(cleanElement('div'))`
   ${color}
   ${space}
   ${width}
@@ -29,6 +32,8 @@ export const Box = styled.div`
   ${fontWeight}
   ${textAlign}
   ${boxShadow}
+  ${borderColor}
+  ${borderWidth}
   ${borderRadius}
   ${display}
   ${verticalAlign}
