@@ -12,6 +12,8 @@ const Html = ({ title = '', description = '', relativePathToRoot = '', styleTags
       <meta name='description' content={description} />
       <title>{title}</title>
       {styleTags}
+      <link href='fonts/montserrat.css' rel='stylesheet' />
+      <link href='fonts/inter.css' rel='stylesheet' />
     </head>
     <ThemeProvider theme={theme}>
       <body style={{margin: 0, fontFamily: theme.fonts[0], color: theme.colors.charcoal, backgroundColor: 'white'}}>

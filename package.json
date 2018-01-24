@@ -7,6 +7,7 @@
     "clean": "rm -rf ./docs/*",
     "build": "npm-run-all --serial clean --parallel build:*",
     "build:html": "node build/html.js",
+    "build:fonts": "mkdir -p docs/fonts; rsync -a --exclude='MontserratAlt*' --exclude='*.woff' --exclude='*.eot' --exclude='*.otf' fonts/inter/docs/font-files/ fonts/montserrat/fonts/webfonts/ fonts/inter.css fonts/montserrat.css docs/fonts",
     "watch": "run-p watch:*",
     "watch:html": "nodemon -w theme.json -w components -w pages -e js,json,jsx -x npm run build:html",
     "watch:serve": "browser-sync start --files 'docs/bundle.*' --files 'docs/*.html' --server docs --port 4000 --reload-delay 600",
