@@ -63,15 +63,17 @@ Provide the main content in a font that blends in with the users system, and is 
 
 Use a type scale to pick a small set of font sizes that work together. The [tachyons type scale] is good.
 
+Note: `rem` values assuming `16px` root font size
+
 | class name | px   | rem    | Example
 | ----------:|-----:|:-------|----------
-|      `.f1` | 48px | 3      | Main header `<h1 class="f1">`
-|      `.f2` | 36px | 2.25   | Sub head `<h2 class="f2">`
-|      `.f3` | 24px | 1.5    | `<h3 class="f3">`
-|      `.f4` | 20px | 1.25   | `<h3 class="f4">`
-|      `.f5` | 16px | 1      | General copy `<p class='f5'>`
-|      `.f6` | 14px | 0.875  | Small header `<h4 class="f6 b uppercase">`
-|      `.f7` | 12px | 0.75   | Small print `<small class='f7'>`
+|      `.f1` |   48 | 3      | Main header `<h1 class="f1">`
+|      `.f2` |   36 | 2.25   | Sub head `<h2 class="f2">`
+|      `.f3` |   24 | 1.5    | `<h3 class="f3">`
+|      `.f4` |   20 | 1.25   | `<h3 class="f4">`
+|      `.f5` |   16 | 1      | General copy `<p class='f5'>`
+|      `.f6` |   14 | 0.875  | Small header `<h4 class="f6 b uppercase">`
+|      `.f7` |   12 | 0.75   | Small print `<small class='f7'>`
 
 Capturing the font sizes for your app as isolated, single purpose css classes, adds flexibility by decoupling your design from your markup semantics. An `<h1>` doesn't have to be the largest text on the page.
 
@@ -83,8 +85,8 @@ Sometimes you need really big text, for fancy splash pages and hero sections.
 
 | class name       | px   | rem  | Example
 | ----------------:|-----:|:-----|----------
-| `.f-headline`    | 48px | 6    | Hero headline `<h1 class="f-headline">`
-| `.f-subheadline` | 36px | 5    | `<h2 class="f-subheadline">`
+| `.f-headline`    |   48 | 6    | Hero headline `<h1 class="f-headline">`
+| `.f-subheadline` |   36 | 5    | `<h2 class="f-subheadline">`
 
 These are just there to help get things done quickly. Use whatever font-size the design calls for. If the it's a one time use for a big impact intro, then just use an inline style.
 
@@ -100,14 +102,14 @@ The tachyons spacing scale is:
 
 | class name  | px   | rem   | CSS declaration
 | -----------:|-----:|:------|--------------------
-|      `.pa0` |   0px | 0    | `padding: 0`
-|      `.pa1` |   4px | 0.25 | `padding: 0.25rem`
-|      `.pa2` |   8px | 0.5  | `padding: 0.5rem`
-|      `.pa3` |  16px | 1    | `padding: 1rem`
-|      `.pa4` |  32px | 2    | `padding: 2rem`
-|      `.pa5` |  64px | 4    | `padding: 4rem`
-|      `.pa6` | 128px | 8    | `padding: 8rem`
-|      `.pa7` | 256px | 16   | `padding: 16rem`
+|      `.pa0` |   0  | 0     | `padding: 0`
+|      `.pa1` |   4  | 0.25  | `padding: 0.25rem`
+|      `.pa2` |   8  | 0.5   | `padding: 0.5rem`
+|      `.pa3` |  16  | 1     | `padding: 1rem`
+|      `.pa4` |  32  | 2     | `padding: 2rem`
+|      `.pa5` |  64  | 4     | `padding: 4rem`
+|      `.pa6` | 128  | 8     | `padding: 8rem`
+|      `.pa7` | 256  | 16    | `padding: 16rem`
 
 See: http://tachyons.io/docs/layout/spacing/
 
