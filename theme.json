@@ -1,7 +1,8 @@
 {
   "fonts": [
     "'Inter UI', system-ui, sans-serif",
-    "'Montserrat', 'Verdana', system-ui, sans-serif"
+    "'Montserrat', 'Verdana', system-ui, sans-serif",
+    "Consolas, monaco, monospace"
   ],
   "space": [
     0,
