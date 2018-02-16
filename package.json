@@ -7,9 +7,8 @@
     "clean": "rm -rf ./docs/*",
     "build": "npm-run-all --serial clean --parallel build:*",
     "build:html": "node build/html.js",
-    "build:css": "node build/css.js",
-    "build:fonts": "mkdir -p docs/fonts; rsync -a --exclude='MontserratAlt*' --exclude='*.woff' --exclude='*.eot' --exclude='*.otf' fonts/inter/docs/font-files/ fonts/montserrat/fonts/webfonts/ fonts/inter.css fonts/montserrat.css docs/fonts",
-    "watch": "run-p watch:*",
+    "build:static": "rsync -a node_modules/ipfs-css/{ipfs.css,fonts} docs",
+    "watch": "run-p build:static watch:*",
     "watch:html": "nodemon -w theme.json -w components -w pages -e js,json,jsx -x npm run build:html",
     "watch:serve": "browser-sync start --files 'docs/bundle.*' --files 'docs/*.html' --server docs --port 4000 --reload-delay 600",
     "deploy": "run-s build deploy:*",
@@ -31,14 +30,17 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
+    "browser-sync": "^2.23.5",
+    "cssnano": "^3.10.0",
+    "ipfs-css": "^0.2.0",
+    "nodemon": "^1.14.11",
+    "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "require-directory": "^2.1.1",
+    "standard": "^10.0.3",
     "styled-components": "^3.0.1",
     "styled-system": "^1.1.1",
-    "browser-sync": "^2.23.5",
-    "nodemon": "^1.14.11",
-    "npm-run-all": "^4.1.2",
-    "standard": "^10.0.3"
+    "tachyons": "^4.9.1"
   }
 }

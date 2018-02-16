@@ -5,7 +5,7 @@ export const PosterH1 = Text.withComponent('h1')
 
 PosterH1.defaultProps = {
   color: 'white',
-  fontFamily: 1,
+  fontFamily: 'montserrat',
   fontSize: 5,
   fontWeight: 400
 }
@@ -15,7 +15,7 @@ export const PosterH2 = Text.withComponent('h2')
 
 PosterH2.defaultProps = {
   color: 'aqua',
-  fontFamily: 1,
+  fontFamily: 'montserrat',
   fontSize: 4,
   fontWeight: 400
 }
