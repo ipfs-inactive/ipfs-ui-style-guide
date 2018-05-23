@@ -1,4 +1,16 @@
-# IPFS UI Style Guide
+# Deprecated until further notice. 
+
+### Please Refer to
+
+- https://github.com/ipfs-shipyard/ipfs-css
+- https://github.com/ipfs-shipyard/pm-ipfs-gui/issues/7#issuecomment-364497449
+
+for the official colors, icons and typeography of the IPFS universe.
+
+This repo will be rebooted with the latest UI style guide as part of the IPFS User Interface project
+https://github.com/ipfs-shipyard/pm-ipfs-gui
+
+# ~~IPFS UI Style Guide~~
 
 A shared style guide for UI design in the IPFS universe.
 
