@@ -139,7 +139,7 @@ Sometimes you need really big text, for fancy splash pages and hero sections.
 | `.f-headline`    |   48 | 6    | Hero headline `<h1 class="f-headline">`
 | `.f-subheadline` |   36 | 5    | `<h2 class="f-subheadline">`
 
-These are just there to help get things done quickly. Use whatever font-size the design calls for. If the it's a one time use for a big impact intro, then just use an inline style.
+These are just there to help get things done quickly. Use whatever font-size the design calls for. If it's a one time use for a big impact intro, then just use an inline style.
 
 ## Spacing
 
