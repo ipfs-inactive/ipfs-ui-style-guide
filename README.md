@@ -9,8 +9,8 @@ Reuse these [colors](#colors), [typography](#typography), and [spacing](#spacing
 These examples use [tachyons] and [ipfs-css]. Using the [Parcel] bundler you can create a index.css file and simply import them.
 
 ```css
-@import tachyons;
-@import ipfs-css;
+@import "tachyons";
+@import "ipfs-css";
 ```
 
 If you're using webpack or [create-react-app] you can install them from npm and import them from `node_modules`. Assuming your index.css lives in `/src` you would import them like:
