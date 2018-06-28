@@ -1,40 +1,73 @@
-# Deprecated until further notice. 
-
-### Please Refer to
-
-- https://github.com/ipfs-shipyard/ipfs-css
-- https://github.com/ipfs-shipyard/pm-ipfs-gui/issues/7#issuecomment-364497449
-
-for the official colors, icons and typeography of the IPFS universe.
-
-This repo will be rebooted with the latest UI style guide as part of the IPFS User Interface project
-https://github.com/ipfs-shipyard/pm-ipfs-gui
-
-# ~~IPFS UI Style Guide~~
+# IPFS UI Style Guide
 
 A shared style guide for UI design in the IPFS universe.
 
 Reuse these [colors](#colors), [typography](#typography), and [spacing](#spacing) values to create a coherent feel across all IPFS applications.
 
+## Getting started
+
+These examples use [tachyons] and [ipfs-css]. Using the [Parcel] bundler you can create a index.css file and simply import them.
+
+```css
+@import tachyons;
+@import ipfs-css;
+```
+
+If you're using webpack or [create-react-app] you can install them from npm and import them from `node_modules`. Assuming your index.css lives in `/src` you would import them like:
+
+```css
+@import "../node_modules/tachyons";
+@import "../node_modules/ipfs-css";
+```
+
+`ipfs-css` comes bundled [InterUI] and [Montserrat] woff2 files when installed from npm. If you are using [Parcel] or [create-react-app] then the font files will be copied into your project automatically.
+
+Otherwise you will need to copy them from your `node_modules` and ensure the paths in the `@font-face` definitions are correct. It may be simpler to copy the [`@font-face` definitions](https://github.com/ipfs-shipyard/ipfs-css/blob/master/ipfs.css#L8-L104) from [ipfs-css] override them in your `index.css` file to point to where you have copied the fonts to.
+
+## Examples
+
+#### Header
+
+```html
+<header class="flex items-center pa3 bg-navy">
+  <a href="https://ipfs.io" title="home" class="w-50">
+    <img src="https://ipfs.io/images/ipfs-logo.svg" style="height: 50px" />
+  </a>
+  <h1 class="w-50 ma0 tr f3 fw2 montserrat aqua">CID inspector</h1>
+</header>
+```
+
+![header example](img/header-cid-inspector.png)
+
+Where
+
+```html
+<header class="flex items-center pa3 bg-navy">
+```
+
+Gives us a container with [flexbox](http://tachyons.io/docs/layout/flexbox/) powers, vertically centered children via `items-center` and a dark blue, `bg-navy` background.
+
+
+```html
+<h1 class="w-50 ma0 tr f3 fw2 montserrat aqua">CID inspector</h1>
+```
+
+Gives us the `aqua` blue text in fancy `montserrat` font. The font-weight is `fw2` (_200 - Extra Light_) and font size `f3` on our [type scale](#typography), which is `24px` olde raster units.
+
+It's given a 50% width with `w-50` and the text aligns to the right with `tr`. It's given a semanticaly pleaseing `h1` tag, but we don't want the usual jumbo bottom margin that headers get, so we zero out the margins with `ma0` which reads "margin, all sides, zero".
+
+
 ## Colors
 
-_Extracted from [ipfs.io] and **TBC**_
+<img title='#0b3a53' src='https://swatches.now.sh?color=%230b3a53&name=navy' /><img title='#244e66' src='https://swatches.now.sh?color=%23244e66&name=navy-muted' /><img title='#69c4cd' src='https://swatches.now.sh?color=%2369c4cd&name=aqua' /><img title='#9ad4db' src='https://swatches.now.sh?color=%239ad4db&name=aqua-muted' />
 
-| teal       | turquoise | blue      |
-|------------|-----------|-----------|
-| `#469ea2` | `#6acad1` | `#00b0e9` |
-| <img title='teal' src='http://swatches.now.sh/?color=%23469ea2'/> | <img title='turquoise' src='http://swatches.now.sh/?color=%236acad1'/> | <img title='blue' src='http://swatches.now.sh/?color=%2300b0e9'/>
+<img title='#b7bbc8' src='https://swatches.now.sh?color=%23b7bbc8&name=gray' /><img title='#d9dbe2' src='https://swatches.now.sh?color=%23d9dbe2&name=gray-muted' /><img title='#34373f' src='https://swatches.now.sh?color=%2334373f&name=charcoal' /><img title='#7f8491' src='https://swatches.now.sh?color=%237f8491&name=charcoal-muted' />
 
-| red        | orange    | beige     |
-|------------|-----------|-----------|
-| `#f05234`  | `#f59223` | `#ffe5ca` |
-| <img title='red' src='http://swatches.now.sh/?color=%23f05234'/> | <img title='orange' src='http://swatches.now.sh/?color=%23f59223'/> | <img title='beige' src='http://swatches.now.sh/?color=%23ffe5ca'/>
+<img title='#ea5037' src='https://swatches.now.sh?color=%23ea5037&name=red' /><img title='#f36149' src='https://swatches.now.sh?color=%23f36149&name=red-muted' /><img title='#f39021' src='https://swatches.now.sh?color=%23f39021&name=yellow' /><img title='#f9a13e' src='https://swatches.now.sh?color=%23f9a13e&name=yellow-muted' />
 
+<img title='#3e9096' src='https://swatches.now.sh?color=%233e9096&name=teal' /><img title='#439a9d' src='https://swatches.now.sh?color=%23439a9d&name=teal-muted' /><img title='#0cb892' src='https://swatches.now.sh?color=%230cb892&name=green' /><img title='#0aca9f' src='https://swatches.now.sh?color=%230aca9f&name=green-muted' />
 
-| blue black | text gray  | light gray |
-|------------|------------|------------|
-| `#041727`  | `#4d5659`  | `#b7c0c3`  |
-| <img title='blue black' src='http://swatches.now.sh/?color=%23041727'/> | <img title='text gray' src='http://swatches.now.sh/?color=%234d5659'/> | <img title='light gray' src='http://swatches.now.sh/?color=%23b7c0c3'/>
+<img title='#edf0f4' src='https://swatches.now.sh?color=%23edf0f4&name=snow' /><img title='#f7f8fa' src='https://swatches.now.sh?color=%23f7f8fa&name=snow-muted' />
 
 ### Fancy hero header gradient
 
@@ -56,20 +89,26 @@ Rendered example
 
 ## Typography
 
-_Extracted from [tachyons] and **TBC**_
-
-### Font family
-
-Use the system font for general instructional text.
+For general instructional text we use [InterUI] as our default sans-serif font.
 
 ```css
-.system-ui-font {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.sans-serif {
+  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 ```
-https://css-tricks.com/snippets/css/system-font-stack/
 
-Provide the main content in a font that blends in with the users system, and is already installed.
+See:
+- https://css-tricks.com/snippets/css/system-font-stack/
+- https://github.com/twbs/bootstrap/blob/e57a2f244ba8446fffe71847e6a58b18f7b2d541/scss/_variables.scss#L251
+- Use the font stack above rather than the `system-ui` font-family because of [issues](https://infinnie.github.io/blog/2017/systemui.html)
+
+For main headers with an IPFS feel we use [Montserrat], as in the [example](#examples) above
+
+```css
+.montserrat {
+  font-family: 'Montserrat', 'Verdana', sans-serif;
+}
+```
 
 ### Font size
 
@@ -147,14 +186,25 @@ followed by a _size_ from the scale, so:
 - `mb3`: margin bottom 3 = `margin-bottom: 1rem`
 - `pa2`: margin all 2 = `padding: 0.5rem`
 
+Further reading:
+
+- http://tachyons.io/docs
+- https://github.com/dwyl/learn-tachyons
+
 ## Credits
 
-This style guide uses ideas from http://tachyons.io/docs/ and http://basscss.com/ and was inspired by https://airbnb.design/building-a-visual-language/
+This style guide is heavily based on http://tachyons.io/
 
 ## License
 
 This repository is mainly for documents. All of these are licensed under the [CC-BY-SA 3.0](https://ipfs.io/ipfs/QmVreNvKsQmQZ83T86cWSjPu2vR3yZHGPm5jnxFuunEB9u) license © 2016 Protocol Labs Inc. Any code is under an [MIT license](LICENSE) © 2016 Protocol Labs Inc.
 
+
+[ipfs-css]: https://github.com/ipfs-shipyard/ipfs-css
 [ipfs.io]: https://ipfs.io
 [tachyons]: http://tachyons.io
-[tachyons type scale]: http://tachyons.io/docs/typography/scale/
+[tachyons type scale]: http://tachyons.io/docs/typography/scale
+[Parcel]: https://parceljs.org
+[create-react-app]: https://github.com/facebook/create-react-app
+[Montserrat]: https://github.com/JulietaUla/Montserrat
+[InterUI]: https://github.com/rsms/inter
