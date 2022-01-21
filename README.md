@@ -1,3 +1,9 @@
+> # 👉 Looking for IPFS Brand Book?  🖌️📔
+> See the end of [ipfs-ui-style-guide/issues/3](https://github.com/ipfs-shipyard/ipfs-ui-style-guide/issues/3)
+
+
+
+
 # IPFS UI Style Guide
 
 A shared style guide for UI design in the IPFS universe.
