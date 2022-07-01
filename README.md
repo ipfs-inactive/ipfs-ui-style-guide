@@ -1,8 +1,14 @@
-> # 👉 Looking for IPFS Brand Book?  🖌️📔
-> See the end of [ipfs-ui-style-guide/issues/3](https://github.com/ipfs-shipyard/ipfs-ui-style-guide/issues/3)
+> This repository is no longer maintained.
 
+# 👉 Looking for up-to-date IPFS visual guidelines? 
 
+[![IPFS-Brand-sheet-public](https://user-images.githubusercontent.com/157609/176955199-0f87b9bc-3a8d-4bd0-b9a3-48a9fe38f942.png)](https://www.figma.com/proto/mH0OlgikgKzLmbMNO3noBs/IPFS-Brand-sheet-public)
 
+See the end of [ipfs-ui-style-guide/issues/3](https://github.com/ipfs-shipyard/ipfs-ui-style-guide/issues/3)
+
+<!--
+
+* * * 
 
 # IPFS UI Style Guide
 
@@ -200,6 +206,8 @@ Further reading:
 ## Credits
 
 This style guide is heavily based on http://tachyons.io/
+
+-->
 
 ## License
 
