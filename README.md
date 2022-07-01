@@ -1,4 +1,4 @@
-> This repository is no longer maintained.
+> This repository is no longer maintained. See [ipfs/ipfs-gui](https://github.com/ipfs/ipfs-gui) instead.
 
 # 👉 Looking for up-to-date IPFS visual guidelines? 
 
